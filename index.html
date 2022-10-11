@@ -48,7 +48,7 @@
   <section class="jumbotron text-center">
     <img src="img/rizki profil.jpg" alt="Muhamad Sari Rizki " width="200" class="rounded-circle img-thumbnail" />
     <h1 class="display-4">Muhamad Sari Rizki</h1>
-    <p class="lead">IT Network System Administration</p>
+    <p class="lead"></p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#ffffff" fill-opacity="1"
         d="M0,96L34.3,117.3C68.6,139,137,181,206,186.7C274.3,192,343,160,411,165.3C480,171,549,213,617,240C685.7,267,754,277,823,250.7C891.4,224,960,160,1029,133.3C1097.1,107,1166,117,1234,128C1302.9,139,1371,149,1406,154.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
@@ -213,11 +213,21 @@
         img.dataset.aosDuration = 1000 ;
       })
 
-
-
       AOS.init();
     </script>
     <!-- Akhir animasi AOS -->
+
+    <!-- animasi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { duration:2, delay:1.5,text:'IT Network System Administration'});
+      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce'})
+      gsap.from('.display-4', { duration: 1, x: '-10%', opacity: 0,  delay: 0.5})
+    </script>
 
 
 
@@ -252,3 +262,4 @@
 </body>
 
 </html>
+
