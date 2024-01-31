@@ -1,305 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link href="https://feeldreams.github.io/heihbd/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-  <!-- My Css -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <title>Portfolio</title>
+<title>Happy Birthday</title>
+<link rel="icon" type="image/x-icon" href="https://malasid.github.io/favicon.png">
+<meta name="description" content="HTML Bucin Malas.id">
+<!-- 
+  Made with love by Rayys!
+  
+    Blog: https://PalingIT.com
+    Instagram: @rayyarrr
+    TikTok: @rayy4r
+    Email: rayyar0703@gmail.com
+    
+  Thanks to all <3
+-->
 </head>
+<body>
+  
+  <!-- Ganti Audio di sini -->
+  <audio src="" id="linkmp3" class="sembunyi"></audio>
+  
+  <div id="bodyblur">
+    <!-- Wallpaper --><img src="fotobg.jpg" id="wallpaper"/><div id="beneranblur"></div>
+  </div>
+  
+  <div id='Content'>
 
-<body id="home">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#">Muhamad Sari Rizki</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#activity">activity</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <div id="kadoIn">
+      <!-- Tombol Surat --><img src="https://feeldreams.github.io/kadoin.png"/>
     </div>
-  </nav>
-  <!-- akhir navbar -->
+    <p id="ket">Hi kamu 🥳 <br>Klik dong kadonya!</p>
 
-  <!-- jumbotron -->
-  <section class="jumbotron text-center">
-    <img src="img/iky2.jpg" alt="Muhamad Sari Rizki " width="200" class="rounded-circle img-thumbnail" />
-    <h1 class="display-4">Muhamad Sari Rizki</h1>
-    <p class="lead"></p>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1"
-        d="M0,96L34.3,117.3C68.6,139,137,181,206,186.7C274.3,192,343,160,411,165.3C480,171,549,213,617,240C685.7,267,754,277,823,250.7C891.4,224,960,160,1029,133.3C1097.1,107,1166,117,1234,128C1302.9,139,1371,149,1406,154.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-      </path>
-    </svg>
-  </section>
-
-  <!-- Akhir jumbotron -->
-
-  <!-- About me -->
-  <section id="about">
-    <div class="container">
-      <div class="row text-center m-3">
-        <div class="col-md" data-aos="zoom-in-up">
-          <h2>About Me</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center fs-5 text-center">
-        <div class="col-4-md-4" data-aos="fade-right" data-aos-duration="500" > 
-          <p>Perkenalkan nama saya Muhamad m_sari_rizki. Orang-orang yang kenal saya biasanya memanggil saya Rizki. Saya
-            asli Indonesia dan suka sekali Dengan IT Network System Administration, Cyber Security dan juga Web Development.</p>
-        </div>
-        <div class="col-4-md-4" data-aos="fade-left" data-aos-delay="200">
-          <p>Kecintaan tentang Dunia IT ini tumbuh sejak pertama kali mengenal dunia IT di tahun 2016.
-            Sejak itulah saya mulai belajar mendalami dunia IT sampai dengan saat ini.</p>
-        </div>
-      </div>
+    <div class="kumpulanstiker">
+        <!-- Stiker untuk Konten -->
+        <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker"/>
+        <img src="https://feeldreams.github.io/pusn.gif" id="fotostiker1"/>
+        <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker2"/>
+        <img src="https://feeldreams.github.io/cilukba.gif" id="fotostiker3"/>
+        <img src="https://feeldreams.github.io/pandakuning.gif" id="fotostiker4"/>
+        <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker5"/>
+        
+        <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker6"/>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#e2edff" fill-opacity="1"
-        d="M0,96L48,96C96,96,192,96,288,112C384,128,480,160,576,181.3C672,203,768,213,864,208C960,203,1056,181,1152,149.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      </path>
-    </svg>
-  </section>
-  <!-- akhir About me -->
+    
+    <p id="halo" class="halo"></p>
+    
+    <div><blockquote id='bq' data-text='㋡'>
+      <p id="kalimat">Aku Ada Sesuatu Nih...</p>
 
-  <!-- activity -->
-  <section id="My_School">
-    <div class="container">
-      <div class="row text-center mb-3">
-        <div class="col">
-          <h2>My School</h2>
-        </div>
+      <p id="pesan1">Klik 4 LOVE di Bawah! 😆</p>
+      <div id="kolombaru">
+        <li id="lv1">❤️</li>
+        <li id="lv2">❤️</li>
+        <li id="lv3">❤️</li>
+        <li id="lv4">❤️</li>
       </div>
-      <div class="row text-center">
-        <div class="col-md-3 mb-3">
-          <div class="card">
-            <img src="img/kegiatan/smp.jpg" class="card-img-top gallery-img" alt="asal sekolah"/>
-            <div class="card-body">
-              <p class="card-text">Pada tahun 2016 saya menempuh Pendidikan di SMPN 06 DOMPU.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card">
-            <img src="img/kegiatan/smk 1 dompu.jpg" class="card-img-top gallery-img" alt="lks 2021" />
-            <div class="card-body">
-              <p class="card-text">Pada tahun 2020-2023 saya menempuh pendidika di SMKN 01 DOMPU, dengan kopetensi keahlian teknik komputer dan jaringan (TKJ).</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card">
-            <img src="img/kegiatan/pkl bumigora.jpg" class="card-img-top gallery-img" alt="lks 2022" />
-            <div class="card-body">
-              <p class="card-text">Pada saat saya naik ke kls 3 SMK melaksanakan Praktik Kerja Lapangan (PKL), yang bertempat di Bumigora University (Universitas Bumigora) selama 4 bulan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card">
-            <img src="img/kegiatan/pkl bumigora.jpg" class="card-img-top gallery-img" alt="pkl" />
-            <div class="card-body">
-              <p class="card-text">Saat ini saya sedang menjadi MABA di Universitas BUMIGORA dengan Jurusan ILMU .</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <p id="pesan2">Tunggu...</p>
+      <!-- Pesan -->
+      <p id="pesan3">Ciee.. Ada yang Ultah Nih 🤣</p>
+      <p id="pesan4">Happy Birthday, </p>
+      <p id="pesan5" class="gaya2">Dah 19 tahun yah, gak kerasa udah mau kepala2:v</p>
+      <p id="pesan6" class="gaya2">Ada yang aku mau sampein ke kamu... <br> sebelumnya makasih yah dalam jangka waktu yang lumayan lama kemarin kamu dah temanin aku <br>
+                                      dan akhirnya kita berpisah untuk fokus menjalani hidup masing2 dulu...</p>
+      <p id="pesan7" class="gaya2">Untuk itu, jaga diri baik2 yah, untuk pakaian juga jangan lupa yah... kan itu untuk mu sendiri juga<br>
+                                      dan semoga kamu kedepannya menjadi pribadi yang lebih baik lagi dan menjadi anak yang berbakti kepada kedua org tua <br><br>
+                                      And semoga kita ketemu lagi di waktu yang tepat.</p>
+
+      <p id="pesan8" class="gaya2">Becanda hehe... :v</p>
+      <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesialmu ini kamu menjadi perempuan yang tambah dewasa, jangan jadi bocil mulu.... 🥳</p>
+      <p id="pesan10" class="gaya2">Happy Level Up Day And BABAYYY!! 🥳</p>
+
+      <!-- Tombol Lanjut -->
+      <p id="opsL">Klik untuk Lanjut</p>
+    </blockquote></div>
+
+    <!-- Tombol Kirim Pesan -->
+    <div id="Tombol"><a id="By">&#128140; Lanjut</a></div>
+
+    <!-- Pesan Tambahan -->
+    <p id="katatambahan" class="sembunyi">Gajadi deh soalnya kamu bau wleee 😜</p>
+    
+    <!-- Pesan Ditolak -->
+    <div id="pesanditolak">
+      <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
+      <p id="kataditolak">Yaudah kalo gamau mh 😜</p>
     </div>
-    <section id="Prestasi">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Prestasi</h2>
-          </div>
-        </div>
-      </div>
-    <div class="row text-center">
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img src="img/kegiatan/Juara 1.jpg" class="card-img-top gallery-img" alt="asal sekolah" />
-          <div class="card-body">
-            <p class="card-text">Saya Waktu SMK Alhamdulillah Sering mendapat juara 1, hal itu yang membuat saya juga menjadi pelajar terbaik di sekolah saya.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img src="img/kegiatan/lks 2021.jpeg" class="card-img-top gallery-img" alt="lks 2021" />
-          <div class="card-body">
-            <p class="card-text">Saya pernah mengikuti Lomba kopetensi Siswa (LKS), mewakili Sekolah saya SMKN 01
-              DOMPU hingga lolos ke PROVINSI dan berhasil merain juara 4 di Tahun 2021 di mataram.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img src="img/kegiatan/lks 2022.jpg" class="card-img-top gallery-img" alt="lks 2022" />
-          <div class="card-body">
-            <p class="card-text">Di tahun 2022, saya kembali terpilih mengikuti Lomba kopetensi Siswa (LKS), Untuk
-              mewakili sekolah SMKN 01 DOMPU hingga lolos ke PROVINSI dan berhasil merain juara 4 di Tahun 2022 di
-              SUMBAWA.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img src="img/kegiatan/lks 2023.jpg" class="card-img-top gallery-img" alt="pkl" />
-          <div class="card-body">
-            <p class="card-text">Pada Tahun 2023 saya mengikuti lomba lks di bidang Cyber Security dan meraih juara 1 yang kemudian akan mewakili NTB di LKS tingkat Nasional pada bidang Cyber Security</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section>  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1"
-        d="M0,288L48,272C96,256,192,224,288,224C384,224,480,256,576,256C672,256,768,224,864,202.7C960,181,1056,171,1152,176C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      </path>
-    </svg>
 
-  </section>
-  <!-- activityt akhir -->
+  </div>
 
-  <!--  contact -->
-  <section id="contact">
-    <div class="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
+<script>
+  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2300, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); ftganti=0;fungsi=0;fungsiAwal=0;deffotostiker=fotostiker.src;function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-snowflake"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-snowflake"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:16vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); 
+  
+  document.getElementById("kadoIn").onclick = function() {if(fungsiAwal==0){audio.play();fungsiAwal=1;kadoIn.style="transition:all .8s ease;transform:scale(10);opacity:0";wallpaper.style="transform: scale(1.5);";ket.style="display:none";setTimeout(initengahan,300);setTimeout(inipesan,500)}}
+  
+  async function inipesan(){
+    var { value: nama } = await swals.fire({
+          title: 'Masukin Nama Kamu', input: 'text',
+      });
+      if(nama && nama.length < 11){
+        window.nama = nama;
+        vketikhalo="Hai, " + nama + " ✨";
+        mulainama();
+        } else {
+          await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');inipesan();
+    }
+  }
 
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Terimakasih!</strong> pesan anda sudah kami terima.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-
-            <form name="contact from">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
-
-              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#0d6efd" fill-opacity="1"
-        d="M0,96L30,128C60,160,120,224,180,229.3C240,235,300,181,360,170.7C420,160,480,192,540,213.3C600,235,660,245,720,234.7C780,224,840,192,900,154.7C960,117,1020,75,1080,74.7C1140,75,1200,117,1260,122.7C1320,128,1380,96,1410,80L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320, 900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
-      </path>
-    </svg>
-  </section>
-  <!-- contact akhir -->
-
-  <!-- footer -->
-  <footer class="bg-primary text-white text-center pb-5">
-    <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/m_sari_rizki/"
-        class="text-white fw-bold">Muhamad Sari Rizki</a></p>
-  </footer>
-  <!-- akhir footer -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-
-    <!-- ANIMASI AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      const galleryImage = document.querySelectorAll('.gallery-img');
-      galleryImage.forEach((img, i)=> {
-        img.dataset.aos = 'flip-left';
-        img.dataset.aosDelay = i * 100 ;
-        img.dataset.aosDuration = 1000 ;
-      })
-
-      AOS.init();
-    </script>
-    <!-- Akhir animasi AOS -->
-
-    <!-- animasi -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
-
-    <script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead', { duration:2, delay:1.5,text:'Pelajar ITNSyA,Cyber Scurity and Web Development '});
-      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
-      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce'})
-      gsap.from('.display-4', { duration: 1, x: '-10%', opacity: 0,  delay: 0.5})
-    </script>
-
-
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby3I66MEZPggEMG2gnqAtM_PGIm2iUbKSe5kMy8Vp7oW9DLYHO3Kl0BbYaomQXzuP6-sQ/exec';
-    const form = document.forms['contact from']
-    const btnKirim = document.querySelector('.btn-kirim');
-    const btnLoading = document.querySelector('.btn-loading');
-    const myAlert = document.querySelector('.my-alert');
-
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      // ketika tombol submit diklik
-      // tempilkan tombol loading, hilangkan tombol kirim
-      btnLoading.classList.toggle('d-none'); 
-      btnKirim.classList.toggle('d-none');
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          // tempilkan tombol kirim, hilangkan tombol loading
-      btnLoading.classList.toggle('d-none');
-      btnKirim.classList.toggle('d-none');
-      //tampilkan alert
-      myAlert.classList.toggle('d-none');
-      //reset fromnya
-      form.reset();
-          console.log('Success!', response);
-      })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
+  //Variable Pertanyaan Akhir
+  var tanya = 'Mau Kado Gak Nih? 😶';
+  var opstanya = 'Ayo jawab 😆';
+  var tompositif = 'Mau';
+  var tomnegatif = 'Engga';
+    
+    async function menuju(){pesanwhatsapp = "Makasii udah ngucapin" + nama + " ultah ><";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');}
+</script>
+<script src="https://malasid.github.io/html/hbd.js"></script>
+<!-- Sampai Sini -->
 </body>
-
-</html>
+  </html>
